@@ -1,0 +1,19 @@
+group 'com.github.itohro'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.eclipse.collections:eclipse-collections-api:7.0.0'
+    compile 'org.eclipse.collections:eclipse-collections:7.0.0'
+    testCompile 'junit:junit:4.12'
+}
+
+mainClassName = "com.github.itohro.Application"
